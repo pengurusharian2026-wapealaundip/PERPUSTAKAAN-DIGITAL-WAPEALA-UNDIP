@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Perpustakaan Digital WAPEALA UNDIP — ruang literatur, dokumentasi, dan arsip organisasi.">
+  <title>Perpustakaan Digital WAPEALA UNDIP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Beranda Perpustakaan Digital WAPEALA UNDIP">
+      <img src="assets/logo-wapeala.png" alt="Logo WAPEALA UNDIP">
+      <span><strong>WAPEALA UNDIP</strong><small>DIGITAL LIBRARY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#koleksi">Koleksi</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#tentang">Tentang</a>
+      <button class="button button-red" id="openLogin">Masuk Perpustakaan</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> RUANG PENGETAHUAN WAPEALA UNDIP</p>
+        <h1>Jelajahi Pengetahuan.<br><em>Abadikan Pengalaman.</em></h1>
+        <p class="hero-copy">Satu ruang digital untuk mengakses literatur, dokumentasi kegiatan, karya, dan arsip WAPEALA Universitas Diponegoro.</p>
+        <a class="button button-white" href="#koleksi">Jelajahi koleksi <span>→</span></a>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <img src="assets/logo-wapeala.png" alt="">
+      </div>
+      <div class="hero-bottom"><span>WAPEALA</span><span>UNIVERSITAS DIPONEGORO</span><span>SEMARANG</span></div>
+    </section>
+
+    <section class="search-section" aria-label="Pencarian koleksi">
+      <div>
+        <p class="section-kicker">TEMUKAN REFERENSI</p>
+        <h2>Apa yang ingin kamu cari?</h2>
+      </div>
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Cari judul, penulis, atau kata kunci..." autocomplete="off">
+        <button id="searchButton" type="button">Cari</button>
+      </label>
+    </section>
+
+    <section class="section" id="kategori">
+      <div class="section-heading">
+        <div><p class="section-kicker">JELAJAHI BERDASARKAN JENIS</p><h2>Kategori koleksi</h2></div>
+        <p>Beragam sumber pengetahuan dan dokumentasi dalam satu tempat.</p>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Buku & Literatur"><span class="category-icon">▤</span><strong>Buku & Literatur</strong><small>Buku referensi dan bacaan</small></button>
+        <button class="category-card" data-category="Jurnal & Artikel"><span class="category-icon">▧</span><strong>Jurnal & Artikel</strong><small>Publikasi dan karya ilmiah</small></button>
+        <button class="category-card" data-category="Ekspedisi & Kegiatan"><span class="category-icon">⌁</span><strong>Ekspedisi & Kegiatan</strong><small>Catatan dan dokumentasi lapangan</small></button>
+        <button class="category-card" data-category="Arsip Organisasi"><span class="category-icon">▣</span><strong>Arsip Organisasi</strong><small>Dokumen dan laporan organisasi</small></button>
+        <button class="category-card" data-category="Panduan & Modul"><span class="category-icon">⌑</span><strong>Panduan & Modul</strong><small>Materi pembelajaran dan panduan</small></button>
+        <button class="category-card" data-category="Media & Dokumentasi"><span class="category-icon">▧</span><strong>Media & Dokumentasi</strong><small>Foto, video, dan materi visual</small></button>
+      </div>
+    </section>
+
+    <section class="section collection-section" id="koleksi">
+      <div class="section-heading">
+        <div><p class="section-kicker">RUANG BACA DIGITAL</p><h2>Koleksi perpustakaan</h2></div>
+        <span class="demo-note">Contoh tampilan — koleksi belum dihubungkan ke database</span>
+      </div>
+      <div class="filter-row">
+        <button class="filter-chip active" data-filter="Semua">Semua</button>
+        <button class="filter-chip" data-filter="Buku & Literatur">Buku</button>
+        <button class="filter-chip" data-filter="Jurnal & Artikel">Jurnal</button>
+        <button class="filter-chip" data-filter="Ekspedisi & Kegiatan">Kegiatan</button>
+        <button class="filter-chip" data-filter="Arsip Organisasi">Arsip</button>
+      </div>
+      <div class="book-grid" id="bookGrid">
+        <article class="book-card" data-category="Panduan & Modul" data-search="contoh panduan kegiatan alam bebas modul">
+          <div class="document-cover cover-blue"><span>WAPEALA UNDIP</span><b>PANDUAN<br>KEGIATAN<br>ALAM BEBAS</b><small>DOKUMEN DIGITAL</small></div>
+          <div class="book-info"><span class="tag">PANDUAN & MODUL</span><h3>Contoh: Panduan Kegiatan Alam Bebas</h3><p>Contoh kartu koleksi untuk menunjukkan format informasi dokumen.</p><span class="file-type">PDF · Contoh</span></div>
+        </article>
+        <article class="book-card" data-category="Ekspedisi & Kegiatan" data-search="contoh dokumentasi ekspedisi wapeala arsip kegiatan">
+          <div class="document-cover cover-red"><span>ARSIP WAPEALA</span><b>DOKUMENTASI<br>EKSPEDISI</b><small>CATATAN KEGIATAN</small></div>
+          <div class="book-info"><span class="tag">EKSPEDISI & KEGIATAN</span><h3>Contoh: Dokumentasi Ekspedisi</h3><p>Contoh kartu untuk arsip perjalanan dan kegiatan lapangan.</p><span class="file-type">PDF · Contoh</span></div>
+        </article>
+        <article class="book-card" data-category="Arsip Organisasi" data-search="contoh laporan organisasi wapeala dokumen">
+          <div class="document-cover cover-green"><span>WAPEALA UNDIP</span><b>ARSIP<br>ORGANISASI</b><small>LAPORAN & DOKUMEN</small></div>
+          <div class="book-info"><span class="tag">ARSIP ORGANISASI</span><h3>Contoh: Arsip Organisasi</h3><p>Contoh kartu untuk laporan, pedoman, dan dokumen organisasi.</p><span class="file-type">PDF · Contoh</span></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Tidak ada koleksi yang cocok dengan pencarian.</p>
+    </section>
+
+    <section class="about-section" id="tentang">
+      <div class="about-seal"><img src="assets/logo-wapeala.png" alt="Logo WAPEALA UNDIP"></div>
+      <div><p class="section-kicker">TENTANG PERPUSTAKAAN</p><h2>Pengetahuan untuk terus bertumbuh.</h2><p>Perpustakaan Digital WAPEALA UNDIP dirancang sebagai pusat akses literatur dan dokumentasi organisasi. Koleksi akan dikelola oleh pengurus agar pengetahuan dan pengalaman dapat diakses serta diwariskan lintas generasi.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><img src="assets/logo-wapeala.png" alt=""><span><strong>WAPEALA UNDIP</strong><small>PERPUSTAKAAN DIGITAL</small></span></div>
+    <p>Universitas Diponegoro · Semarang</p>
+    <small>© <span id="year"></span> WAPEALA UNDIP. Dikelola oleh organisasi.</small>
+  </footer>
+
+  <dialog id="loginDialog" class="login-dialog">
+    <form method="dialog" class="dialog-close"><button aria-label="Tutup">×</button></form>
+    <p class="section-kicker">SELAMAT DATANG</p>
+    <h2>Masuk ke perpustakaan</h2>
+    <p class="dialog-copy">Isi identitas singkat untuk memulai sesi kunjungan. Tidak perlu membuat akun.</p>
+    <form id="visitorForm">
+      <label>Nama lengkap<input name="visitorName" required maxlength="100" placeholder="Masukkan nama lengkap"></label>
+      <label>Asal institusi / komunitas<input name="institution" required maxlength="120" placeholder="Contoh: Universitas Diponegoro"></label>
+      <p class="privacy-note">Pada versi berikutnya, data kunjungan akan dicatat setelah sistem database dan pemberitahuan privasi diaktifkan.</p>
+      <button class="button button-red full-button" type="submit">Lanjutkan</button>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
