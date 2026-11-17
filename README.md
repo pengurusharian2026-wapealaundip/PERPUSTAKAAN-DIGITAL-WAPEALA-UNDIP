@@ -25,3 +25,5 @@ Buka `index.html` menggunakan browser.
 Ini masih prototipe frontend. Form pengunjung hanya simulasi dan belum mengirim atau menyimpan data. Katalog yang ditampilkan juga contoh. Database, pencatatan kunjungan, akses admin, dan penyimpanan dokumen akan dibuat pada tahap backend berikutnya.
 
 Jangan menaruh secret key, kata sandi, atau data pribadi di repository publik.
+
+Website Perpustakaan Digital WAPEALA UNDIP.
